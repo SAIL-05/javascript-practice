@@ -247,7 +247,7 @@ const weightinKg=parseFloat(prompt("enter your weight in kg"))
         console.log("your are classI OBESE")
         alert("your are classI OBESE")
     }
-        else if(score>=50&&score==59){
+        else if(bmi>35){
         console.log("your are classII OBESE")
         alert("your are classII OBESE")
     } 
