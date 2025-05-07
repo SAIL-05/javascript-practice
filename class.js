@@ -232,27 +232,38 @@ const weightinKg=parseFloat(prompt("enter your weight in kg"))
  const bmi= weightinKg/((heightinm)*(heightinm))
 
  if (bmi<=18.5){
+        console.log(bmi)
         console.log("You are UNDERWEIGHT")
         alert("You are UNDERWEIGHT")
     }
         else if(bmi>=18.5&&bmi===24.9){
+            console.log(bmi)
             console.log("your weight is NORMAL")
+            alert(bmi)
             alert("your weight is NORMAL") 
         }
         else if(bmi>=25 && bmi===29.9){
-        console.log("you are overweight")
-        alert("you are overweight")
+            console.log(bmi)
+            console.log("you are overweight")
+            alert(bmi)
+            alert("you are overweight")
     }
         else if(bmi>=30 && bmi===34.9){ 
-        console.log("your are classI OBESE")
-        alert("your are classI OBESE")
+            console.log(bmi)
+            console.log("your are classI OBESE")
+            alert(bmi)
+            alert("your are classI OBESE")
     }
         else if(bmi>35){
-        console.log("your are classII OBESE")
-        alert("your are classII OBESE")
+            console.log(bmi)
+            console.log("your are classII OBESE")
+            alert(bmi)
+            alert("your are classII OBESE")
     } 
         else{
-        console.log("your are classIII OBESE")
-        alert("your are classIII OBESE")
+            console.log(bmi)
+            console.log("your are classIII OBESE")
+            alert(bmi)
+            alert("your are classIII OBESE")
         }
  
