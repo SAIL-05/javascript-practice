@@ -226,44 +226,141 @@
 // }
 
 
-const num = parseFloat(prompt("enter your height in cm"))
-const heightinm= num/100
-const weightinKg=parseFloat(prompt("enter your weight in kg")) 
- const bmi= weightinKg/((heightinm)*(heightinm))
+// const num = parseFloat(prompt("enter your height in cm"))
+// const heightinm= num/100
+// const weightinKg=parseFloat(prompt("enter your weight in kg")) 
+//  const bmi= weightinKg/((heightinm)*(heightinm))
 
- if (bmi<=18.5){
-        console.log(bmi)
-        console.log("You are UNDERWEIGHT")
-        alert("You are UNDERWEIGHT")
-    }
-        else if(bmi>=18.5&&bmi===24.9){
-            console.log(bmi)
-            console.log("your weight is NORMAL")
-            alert(bmi)
-            alert("your weight is NORMAL") 
-        }
-        else if(bmi>=25 && bmi===29.9){
-            console.log(bmi)
-            console.log("you are overweight")
-            alert(bmi)
-            alert("you are overweight")
-    }
-        else if(bmi>=30 && bmi===34.9){ 
-            console.log(bmi)
-            console.log("your are classI OBESE")
-            alert(bmi)
-            alert("your are classI OBESE")
-    }
-        else if(bmi>35){
-            console.log(bmi)
-            console.log("your are classII OBESE")
-            alert(bmi)
-            alert("your are classII OBESE")
-    } 
-        else{
-            console.log(bmi)
-            console.log("your are classIII OBESE")
-            alert(bmi)
-            alert("your are classIII OBESE")
-        }
+// 
+// if (score>=70 && score <=100){
+//     console.log("YOUR GRADE IS A")
+//     alert("YOUR GRADE IS A")
+// }
+//     else if(isNaN(score)){
+//         console.log("this is not a number")
+//         alert("this is not a number") 
+//     }
+//     else if(score>100 ){
+//     console.log("the score is invalid")
+//     alert("the score is invalid")
+// }
+//     else if(score>=60&&score==69){ 
+//     console.log("YOUR GRADE IS B")
+//     alert("YOUR GRADE IS B")
+// }
+//     else if(score>=50&&score==59){
+//     console.log("YOUR GRADE IS C")
+//     alert("YOUR GRADE IS C")
+// } 
+//     else if(score>=45&&score==49){
+//     console.log("YOUR GRADE IS D")
+//     alert("YOUR GRADE IS D")
+// }
+//      else if(score>=40&&score==44){
+//     console.log("YOUR GRADE IS E")
+//     alert("YOUR GRADE IS E")
+// }
+//     else if(score<=0){
+//         console.log("the score is invalid")
+//         alert("the score is invalid")
+//     }
+//     else{
+//     console.log("YOU fail-F")
+//     alert("YOU FAIL-F")
+// }
+
+
+// const num = parseFloat(prompt("enter your height in cm"))
+// const heightinm= num/100
+// const weightinKg=parseFloat(prompt("enter your weight in kg")) 
+//  const bmi= weightinKg/((heightinm)*(heightinm))
+
+//  if (bmi<=18.5){
+//         console.log(bmi)
+//         console.log("You are UNDERWEIGHT")
+//         alert("You are UNDERWEIGHT")
+//     }
+//         else if(bmi>=18.5&&bmi===24.9){
+//             console.log(bmi)
+//             console.log("your weight is NORMAL")
+//             alert(bmi)
+//             alert("your weight is NORMAL") 
+//         }
+//         else if(bmi>=25 && bmi===29.9){
+//             console.log(bmi)
+//             console.log("you are overweight")
+//             alert(bmi)
+//             alert("you are overweight")
+//     }
+//         else if(bmi>=30 && bmi===34.9){ 
+//             console.log(bmi)
+//             console.log("your are classI OBESE")
+//             alert(bmi)
+//             alert("your are classI OBESE")
+//     }
+//         else if(bmi>35){
+//             console.log(bmi)
+//             console.log("your are classII OBESE")
+//             alert(bmi)
+//             alert("your are classII OBESE")
+//     } 
+//         else{
+//             console.log(bmi)
+//             console.log("your are classIII OBESE")
+//             alert(bmi)
+//             alert("your are classIII OBESE")
+//         }
+
+//         function checkGreater(num1,num2){
+    
+//                 if (num1>num2){
+//                     console.log(`Yes,${num1} is greater than ${num2}`)
+//                 }
+//                 else if(num1===num2){
+//                     console.log(`No,${num2} is equal to  ${num1}`)
+//                 }
+//                 else{
+//                     console.log(`No,${num2} is greater than ${num1}`)
+//                 }
+               
  
+//write a program that calculates the ticket price based on age with the following conditions: age below 12 pay a ticket price of 5,  age below 18 pay a ticket price of 10,  age below 60 pay a ticket price of 20, age over 60 pay a ticket price of 15.
+age = parseInt(prompt("Enter your age"))
+noOfTicket= parseInt(prompt("no of tickets"))
+
+     if (age<12&&age===11){
+        console.log(noOfTicket*5)
+        alert(noOfTicket*5)
+    }
+    else if(age>11&&age===17){
+            console.log(noOfTicket*10)
+            alert(noOfTicket*10)
+            }
+   else if(age<18&&age===12){
+                console.log(noOfTicket*10)
+                alert(noOfTicket*10)
+        }
+     else if(age>=18 && age===59){ 
+            console.log(noOfTicket*20)
+            alert(noOfTicket*20)
+    }
+     else if(age<59 && age===18){ 
+            console.log(noOfTicket*20)
+            alert(noOfTicket*20)
+    }
+   
+    else if(isNaN(age)){
+        console.log("invalid")
+        alert("invalid")
+} 
+    else {
+            console.log(noOfTicket*15)
+            alert(noOfTicket*15)
+    }
+
+
+//write a program that determines if a year is leap year.
+
+
+
+
