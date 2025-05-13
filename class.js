@@ -447,11 +447,14 @@ if (guess === secretNumber) {
     alert("Congratulation...You guessed the secret number!");
 }
 else if (guess > secretNumber) {
-    alert("Too High. Try again!");
+    alert("sorry. Try again!");
 }
 
 else if (guess < secretNumber) {
-    alert("Too Low. Try again!");
+    alert("sorry. Try again!");
+}
+else if (isNaN(guess)) {
+    alert("Invalid");
 }
 else if (guess < 0 && guess > 10) {
     alert("This is an invalid number");
