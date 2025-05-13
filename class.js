@@ -1,4 +1,4 @@
-// //strring datatype
+// //string datatype
 // let mySchool = "landmark"
 // console.log(mySchool)
 
@@ -325,42 +325,137 @@
                
  
 //write a program that calculates the ticket price based on age with the following conditions: age below 12 pay a ticket price of 5,  age below 18 pay a ticket price of 10,  age below 60 pay a ticket price of 20, age over 60 pay a ticket price of 15.
-age = parseInt(prompt("Enter your age"))
-noOfTicket= parseInt(prompt("no of tickets"))
+// age = parseInt(prompt("Enter your age"))
+// noOfTicket= parseInt(prompt("no of tickets"))
 
-     if (age<12&&age===11){
-        console.log(noOfTicket*5)
-        alert(noOfTicket*5)
-    }
-    else if(age>11&&age===17){
-            console.log(noOfTicket*10)
-            alert(noOfTicket*10)
-            }
-   else if(age<18&&age===12){
-                console.log(noOfTicket*10)
-                alert(noOfTicket*10)
-        }
-     else if(age>=18 && age===59){ 
-            console.log(noOfTicket*20)
-            alert(noOfTicket*20)
-    }
-     else if(age<59 && age===18){ 
-            console.log(noOfTicket*20)
-            alert(noOfTicket*20)
-    }
+//      if (age<12&&age===11){
+//         console.log(noOfTicket*5)
+//         alert(noOfTicket*5)
+//     }
+//     else if(age>11&&age===17){
+//             console.log(noOfTicket*10)
+//             alert(noOfTicket*10)
+//             }
+//    else if(age<18&&age===12){
+//                 console.log(noOfTicket*10)
+//                 alert(noOfTicket*10)
+//         }
+//      else if(age>=18 && age===59){ 
+//             console.log(noOfTicket*20)
+//             alert(noOfTicket*20)
+//     }
+//      else if(age<59 && age===18){ 
+//             console.log(noOfTicket*20)
+//             alert(noOfTicket*20)
+//     }
    
-    else if(isNaN(age)){
-        console.log("invalid")
-        alert("invalid")
-} 
-    else {
-            console.log(noOfTicket*15)
-            alert(noOfTicket*15)
-    }
+//     else if(isNaN(age)){
+//         console.log("invalid")
+//         alert("invalid")
+// } 
+//     else {
+//             console.log(noOfTicket*15)
+//             alert(noOfTicket*15)
+//     }
 
 
-//write a program that determines if a year is leap year.
+// Write a program that determines if a year is a leap year.
+
+        // let year = parseInt(prompt("Enter a year"));
+// if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+//     console.log("This is a leap year");
+//     return true;
+// } else {
+//     console.log("This is not a leap year");
+//     return false;
+// }
+// alert("This is a leap year")
 
 
+// Write a program that calculates a discount based on the purchase amount.Prices equal or over 100 discount have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0
+
+// prices= parseFloat(prompt("Enter your total amount"))
+//  pricesHigh= (20/100)*prices
+//  pricesLow= (10/100)*prices
+//         if (prices>=100){
+//         console.log(prices-pricesHigh)
+//  }
+//         else if(prices===50&&prices>50){
+//                 console.log(prices-pricesLow)
+//         }
+//         else if(prices<=99.99){
+//                 console.log(prices-pricesLow)
+//         }
+//         else{
+//                 console.log(prices)
+//         }
 
 
+// Write a program that greets the user based on the time of day. Display good morning, good afternoon or good evening based on the time of day when you run the code.
+// let now = new Date()
+// let hour = now.getHours()
+// const presenthour = parseFloat(prompt("enter the time"))
+//          if (hour>=1&&hour<12){
+//         console.log("good morning")
+//   }
+//   else if(hour>12&&hour===12){
+//         console.log("good afternoon")
+//   }
+//   else if(hour<15&&hour===15){
+//         console.log("good afternoon")
+//   }
+//         else if(hour>24||hour<0){
+//         console.log("invalid time")
+//   } 
+//   else if (hour>=16&&hour<=19){
+//         console.log("good evening")
+//   }
+//   else if (hour<19&&hour===19){
+//         console.log("good evening")
+//   }
+//         else{
+//         console.log("good night")
+//   }
+
+// let time= prompt("enter time")
+// let [hours,minutesColumn] = time.split(":")
+// let [minutes,space]= minutesColumn.split(" ")
+// let hour = parseInt(hours)
+// let minute=parseInt(minutes)
+//         if (space.toUpperCase()=== "PM" && hour!==12){
+//              hour   +=12
+//         }
+//         else if(space.toUpperCase()=== "AM" &&hour ==12){
+//                 hour=0
+//         }
+//         if(hour>=0 &&hour <12){
+//                 alert(`good morning the time is ${time}`)
+//         }
+//         else if(hour>=12&&hour<4){
+//                 alert(`good afternoon the time is ${time}`)
+
+//         }
+//         else{
+//                 alert(`good evening the time is ${time}`)
+//         }
+
+// Write a simple number guessing game. Provide a secret number and a guess. Based on those numbers give players clues if their guess is higher, lower or correct.
+
+let secretNumber = 8;
+let guess = parseInt(prompt("Enter a number between 1 and 10"));
+if (guess === secretNumber) {
+    alert("Congratulation...You guessed the secret number!");
+}
+else if (guess > secretNumber) {
+    alert("Too High. Try again!");
+}
+
+else if (guess < secretNumber) {
+    alert("Too Low. Try again!");
+}
+else if (guess < 0 && guess > 10) {
+    alert("This is an invalid number");
+}
+else {
+    alert("This is an invalid number");
+}
