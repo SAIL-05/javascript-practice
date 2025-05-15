@@ -425,13 +425,13 @@
 //         if (space.toUpperCase()=== "PM" && hour!==12){
 //              hour   +=12
 //         }
-//         else if(space.toUpperCase()=== "AM" &&hour ==12){
+//         else if(space.toUpperCase()=== "AM" &&hour ===12){
 //                 hour=0
 //         }
 //         if(hour>=0 &&hour <12){
 //                 alert(`good morning the time is ${time}`)
 //         }
-//         else if(hour>=12&&hour<4){
+//         else if(hour>=12&&hour<17){
 //                 alert(`good afternoon the time is ${time}`)
 
 //         }
@@ -441,24 +441,85 @@
 
 // Write a simple number guessing game. Provide a secret number and a guess. Based on those numbers give players clues if their guess is higher, lower or correct.
 
-let secretNumber = 8;
-let guess = parseInt(prompt("Enter a number between 1 and 10"));
-if (guess === secretNumber) {
-    alert("Congratulation...You guessed the secret number!");
-}
-else if (guess > secretNumber) {
-    alert("sorry. Try again!");
-}
+// let secretNumber = 8;
+// let guess = parseInt(prompt("Enter a number between 1 and 10"));
+// if (guess === secretNumber) {
+//     alert("Congratulation...You guessed the secret number!");
+// }
+// else if (guess > secretNumber) {
+//     alert("sorry. Try again!");
+// }
 
-else if (guess < secretNumber) {
-    alert("sorry. Try again!");
-}
-else if (isNaN(guess)) {
-    alert("Invalid");
-}
-else if (guess < 0 && guess > 10) {
-    alert("This is an invalid number");
-}
-else {
-    alert("This is an invalid number");
-}
+// else if (guess < secretNumber) {
+//     alert("sorry. Try again!");
+// }
+// else if (isNaN(guess)) {
+//     alert("Invalid");
+// }
+// else if (guess < 0 && guess > 10) {
+//     alert("This is an invalid number");
+// }
+// else {
+//     alert("This is an invalid number");
+// }
+
+// //today's class STRING METHOD
+// let myStr= "hello, Javascript World"
+// console.log(myStr)
+// console.log(myStr.toUpperCase())
+// console.log(myStr.toLowerCase())
+// console.log(myStr.charAt())
+
+
+// function take(number){
+//         number= prompt("Enter a number")
+//         console.log(number)
+// }
+// take()
+// function minus(num1,num2){
+//  takeaway= num1-num2
+//  console.log(takeaway)
+// }
+// minus(50,20)
+//  function checkGreater(num){
+//         num= parseInt(prompt("Enter any number"))
+//         if(num>6){
+//                 console.log(`${num} is greater than 6 `)
+//         }
+//         else{
+//                 console.log(`${num} is not greater than 6 `)
+//         }
+//  }
+//  checkGreater()
+// 
+//  function checknamelength(){
+//         name= prompt("enter any name")
+//         console.log('your name is '+ name.length + 'long')
+//  }
+//  checknamelength()
+
+//  function returnHighest(num1,num2,num3,num4){
+//         num1 = parseInt(prompt("Enter any number"))
+//         num2 = parseInt(prompt("Enter any number"))
+//         num3 = parseInt(prompt("Enter any number"))
+//         num4 = parseInt(prompt("Enter any number"))
+//         highest= Math.max(num1,num2,num3,num4)
+//         console.log(highest)
+//  }
+//                 returnHighest()
+
+//  function checkEven() {
+//         num  = parseInt(prompt("enter a number"))
+//                 if (num%2==0){
+//                         console.log("this is an even number")
+//                 }
+//                 else{
+//                         console.log("this is an odd numer")
+//                 }
+// }
+// checkEven()
+ let checknamelength= () =>{
+        name= prompt("enter any name")
+        console.log('your name is '+ name.length + ' letters long')
+ }
+ checknamelength()
